@@ -1,44 +1,69 @@
-# Chris Sound Module
+Chris Sound Module
 
-## Overview
+Overview
 
-The Chris Sound Module is a Foundry VTT module designed to send and receive custom sound messages. This module allows a Game Master (GM) to play specific sounds for individual players, enhancing the immersive experience of your tabletop role-playing game.
+The Chris Sound Module is a Foundry VTT module designed to enhance sound management for tabletop role-playing games. This module introduces a user-friendly interface, the SoundPad, allowing Game Masters (GMs) to easily play and manage sounds for specific players, creating a more immersive experience.
 
-## Features
+Features
 
-- **Play Sounds for Specific Players:** Allows the GM to play a sound for a particular player without others hearing it.
-- **Custom Notifications:** Provides feedback and notifications on successful sound playback and any errors that occur.
-- **Easy Integration:** Simple to use with macros for quick execution.
+SoundPad Interface: A graphical interface to select and manage sounds without relying on macros.
 
-## Installation
+Play Sounds for Specific Players: GMs can play sounds for a particular player without others hearing it.
 
-1. Download the latest release of the module.
-2. Activate the module in your World settings.
+Custom Notifications: Provides feedback and notifications on successful sound playback and any errors.
 
-## Usage
+Logging Options: Enable or disable console logs for debugging through module settings.
 
-1. Ensure the module is activated in the Module Settings.
-2. Create a macro to use the `playSoundForPlayer` function. This function takes three arguments: playerName, playlistName, and songName.
-3. Example macro:
-  
-    const playerName = "Player6";  // Player's name
-    const playlistName = "Ambient Sounds";  // Playlist name
-    const songName = "Tor";  // Song name
+Configurable Volume Control: Adjust sound volumes dynamically for individual players.
 
-    playSoundForPlayer(playerName, playlistName, songName);
+Drag-and-Drop Support: Easily add sounds to the SoundPad by dragging them from playlists.
 
-5. Save the macro and add it to your hotbar.
-6. Execute the macro to play the sound for the specified player.
+Installation
 
-## Troubleshooting
+Download the latest release: Obtain the latest version from the Releases page.
 
-- Ensure the player names, playlist names, and song names match exactly with those in your Foundry VTT setup.
-- Check the console logs for any error messages and follow the guidance provided to resolve them.
+Activate the module: Go to World Settings in Foundry VTT and enable "Chris Sound Module."
 
-## License
+Usage
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+SoundPad Interface
 
-## Credits
+Open the SoundPad via the module settings menu.
+
+Drag and drop sounds from playlists into the SoundPad.
+
+Select a sound and a player, then use the Play button to play the sound for the chosen player.
+
+Use the volume slider to adjust the playback volume dynamically.
+
+Stop all sounds or remove sounds from the interface as needed.
+
+Legacy Macro Support
+
+For users who prefer macros, the module still supports the playSoundForPlayer function. This function takes three arguments: playerName, playlistName, and songName.
+
+Example Macro:
+
+const playerName = "Player6"; // Player's name
+const playlistName = "Ambient Sounds"; // Playlist name
+const songName = "Tor"; // Song name
+
+playSoundForPlayer(playerName, playlistName, songName);
+
+Save the macro and add it to your hotbar. Execute the macro to play the sound for the specified player.
+
+Troubleshooting
+
+Verify Names: Ensure that player names, playlist names, and song names match exactly with those in your Foundry VTT setup.
+
+Check Logs: Enable console logging in the module settings and check the logs for detailed error messages.
+
+Compatibility: Ensure you are using the latest version of the module and Foundry VTT.
+
+License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+Credits
 
 Developed by Chrisrous.
