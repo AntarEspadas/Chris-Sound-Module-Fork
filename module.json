@@ -23,5 +23,5 @@
   "socket": true,
   "url": "https://github.com/AntarEspadas/Chris-Sound-Module-Fork",
   "manifest": "https://raw.githubusercontent.com/AntarEspadas/Chris-Sound-Module-Fork/main/module.json",
-  "download": "https://github.com/AntarEspadas/Chris-Sound-Module-Fork/releases/download/v1.1.0/chris-sound-module-fork.zip"
+  "download": "https://github.com/AntarEspadas/Chris-Sound-Module-Fork/archive/refs/tags/v1.1.0.zip"
 }
