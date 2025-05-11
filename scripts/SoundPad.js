@@ -220,3 +220,7 @@ Hooks.once("ready", () => {
 });
 
 window.SoundPad = SoundPad;
+window.controlSoundForPlayer = controlSoundForPlayer;
+window.changeVolumeForPlayer = changeVolumeForPlayer;
+window.playSoundForPlayer = playSoundForPlayer;
+console.log(playSoundForPlayer);
