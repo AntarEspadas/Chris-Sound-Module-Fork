@@ -14,6 +14,12 @@ function logMessage(message, ...optionalParams) {
 Hooks.once('ready', () => {
   logMessage("Chris Sound Module: Initializing socket listener...");
 
+  game.modules.get("chris-sound-module").api = {
+    controlSoundForPlayer,
+    changeVolumeForPlayer,
+    playSoundForPlayer
+  };
+
   // Listener für eingehende Nachrichten vom Modul-Socket
   game.socket.on('module.chris-sound-module', (data) => {
     // Überprüft, ob die Aktion 'playSound' und der Benutzer korrekt ist
